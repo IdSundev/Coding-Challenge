@@ -10,7 +10,7 @@ function printBox () {
   for (let i = 0; i < arr.length; i++) {
       var out = ''
       for (let j = 0; j < arr.length; j++) {
-          out += `<td><div id="box${arr[i][j]}">${arr[i][j]}<div></td>`
+          out += `<td><div id="box${arr[i][j]}"><img src="./assets/icon/${arr[i][j]}.png" width="20px"><div></td>`
       }
       tableRow[i].innerHTML = out + `<td><button id="sortLeft" onclick="sortLeft(${i})"><i class="material-icons">compare_arrows</i></button></td>`
   }
