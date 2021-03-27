@@ -1,5 +1,13 @@
 /* import roboto font */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {
+  font-family: 'Rocky Age';
+  src: url('./font/RockyAgeRegular.woff2') format('woff2'),
+      url('./font/RockyAgeRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
     margin: 0; padding: 0;
@@ -35,6 +43,8 @@ body {
 h3 {
     margin: 10% auto 5% auto;
     text-transform: uppercase;
+    font-family: 'Rocky Age';
+    font-size: 36px;
 }
 
 table, td {
