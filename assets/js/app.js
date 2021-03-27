@@ -29,6 +29,7 @@ function sortLeft (index) {
   } else {
       arr[index].sort((a, b) => a > b ? -1 : 1)
   }
+  playAudioSort()
   printBox()
 }
 
@@ -49,6 +50,7 @@ function sortBottom(index) {
   arr[0][index] = arrNew[0]
   arr[1][index] = arrNew[1]
   arr[2][index] = arrNew[2]
+  playAudioSort()
   printBox()            
 }
 
@@ -61,6 +63,7 @@ function counter () {
       }
   }
   arr = newArr.reverse()
+  playAudioRotateLeft()
   printBox()
 }
 
@@ -73,6 +76,7 @@ function clockWise () {
       }
   }
   arr = newArr
+  playAudioRotateRight()
   printBox()
 }
 
@@ -82,7 +86,28 @@ function reset () {
       [4, 5, 6],
       [7, 8, 9]
   ]
+  playAudioReset()
   printBox()
+}
+
+function playAudioRotateLeft() {
+  let audio = document.getElementById("soundLeft");
+  audio.play();
+}
+
+function playAudioRotateRight() {
+  let audio = document.getElementById("soundRight");
+  audio.play();
+}
+
+function playAudioSort() {
+  let audio = document.getElementById("soundSort");
+  audio.play();
+}
+
+function playAudioReset() {
+  let audio = document.getElementById("soundReset");
+  audio.play();
 }
 
 // call main function
