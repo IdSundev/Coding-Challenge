@@ -1,0 +1,147 @@
+/* import roboto font */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: all 200ms cubic-bezier(0, 0.995, 0.99, 1);
+    transition: all 200ms cubic-bezier(0, 0.995, 0.99, 1);
+}
+
+body {
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 480px;
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,
+    rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+
+.table {
+    margin: 5% auto;
+}
+
+h3 {
+    margin: 10% auto 5% auto;
+    text-transform: uppercase;
+}
+
+table, td {
+    border: 0px solid #2c3e50;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.button {
+    display: inline-flex;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    height: 50px; width: 60px;
+    border: none;
+    text-transform: uppercase;
+    
+}
+
+#counter, #clockWise, #reset {
+    margin-right: 10px;
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,
+    rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+
+#counter:hover, #clockWise:hover, #reset:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25), 
+    0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+button:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25), 
+    0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+#box1 {
+    background-color: #0fbcf9;
+    height: 50px; width: 60px;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0);
+}
+
+#box2 {
+    background-color: #05c46b ;
+    height: 50px; width: 60px;
+    padding: 15px; 
+    color: rgba(0, 0, 0, 0);
+}
+
+#box3 {
+    background-color: #ffd32a;
+    height: 50px; width: 60px;
+    padding: 15px; 
+    color: rgba(0, 0, 0, 0);
+}
+
+#box4 {
+    background-color: #808e9b;
+    height: 50px; width: 60px;
+    padding: 15px; 
+    color: rgba(0, 0, 0, 0);
+}
+
+#box5 {
+    background-color: #f53b57;
+    height: 50px; width: 60px;
+    padding: 15px; 
+    color: rgba(0, 0, 0, 0);
+}
+
+#box6 {
+    background-color: #8e44ad;
+    height: 50px; width: 60px;
+    padding: 15px; 
+    color: rgba(0, 0, 0, 0);
+}
+
+#box7 {
+    background-color: #ffa801;
+    height: 50px; width: 60px;
+    padding: 15px; 
+    color: rgba(0, 0, 0, 0);
+}
+
+#box8 {
+    background-color: #3498db ;
+    height: 50px; width: 60px;
+    padding: 15px; 
+    color: rgba(0, 0, 0, 0);
+}
+
+#box9 {
+    background-color: #0be881;
+    height: 50px; width: 60px;
+    padding: 15px; 
+    color: rgba(0, 0, 0, 0);
+}
+
+td:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25), 
+    0 5px 5px rgba(0, 0, 0, 0.22);
+}
